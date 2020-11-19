@@ -4,7 +4,7 @@ import { mergeClasses } from '@magento/venia-ui/lib/classify';
 import { Link, resourceUrl } from '@magento/venia-drivers';
 import {convertStringToArray} from '../../util/convertString'
 import { Price } from '@magento/peregrine';
-import {Heart} from 'react-feather'
+// import {Heart} from 'react-feather'
 import {useGridItem} from '../../talons/MpARP/useGridItem'
 import Image from '@magento/venia-ui/lib/components/Image';
 import Button from '@magento/venia-ui/lib/components/Button';
@@ -25,7 +25,7 @@ const Item = props => {
         handleAddToCart,
         handleClickItem,
         isAddSimpleLoading,
-        errorAddingSimpleProduct,
+        // errorAddingSimpleProduct,
     } = talonProps
 
     const productPrice = useMemo(() => {
@@ -70,25 +70,25 @@ const Item = props => {
         classes
     ])
     
-    const addToWishList = useMemo(() => {
-        if(arrDisplayAdditional.includes(String(Constants.DISPLAY_ADDITIONAL_ADDTOWISHLIST))) {
-            return (
-                <section className={classes.wishlistAction}>
-                    <div>
-                        <Heart />
-                    </div>
-                </section>
-            )
-        }
+    // const addToWishList = useMemo(() => {
+    //     if(arrDisplayAdditional.includes(String(Constants.DISPLAY_ADDITIONAL_ADDTOWISHLIST))) {
+    //         return (
+    //             <section className={classes.wishlistAction}>
+    //                 <div>
+    //                     <Heart />
+    //                 </div>
+    //             </section>
+    //         )
+    //     }
 
-        return null;
-    }, [arrDisplayAdditional, classes])
+    //     return null;
+    // }, [arrDisplayAdditional, classes])
 
     const productLink = resourceUrl(`/${url_key}${url_suffix}`);
 
     return (
         <div className={classes.gridItem} >
-            <Link to={productLink} className={classes.images}>
+            <Link onClick={handleClickItem} to={productLink} className={classes.images}>
                 <Image
                     alt={name}
                     classes={{
@@ -100,13 +100,13 @@ const Item = props => {
                     height={'100%'}
                 />
             </Link>
-            <Link to={productLink} className={classes.name}>
+            <Link onClick={handleClickItem} to={productLink} className={classes.name}>
                 <span>{name}</span>
             </Link>
             {productPrice}
             <div className={classes.actionBlock}>
                 {addToCartButton}
-                {addToWishList}
+                {/* {addToWishList} */}
             </div>
         </div>
     );

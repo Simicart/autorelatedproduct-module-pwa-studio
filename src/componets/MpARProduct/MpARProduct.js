@@ -22,25 +22,29 @@ const MpARProduct = props => {
     const content = useMemo(() => {
         if(filterData) {
             return filterData.map((item, index) => {
-                if(
-                    location === Constants.LOCATION_RIGHT_POPUP_CONTENT 
-                    || location === Constants.LOCATION_LEFT_POPUP_CONTENT
-                ) {
-                    return (
-                        <Popup 
-                            key={index}
-                            item={item}
-                        />
-                    )
-                } else {
-                    return (
-                        <div key={index}  className={classes.wrapper}>
-                            <Gallery
+                if(item.is_active) {
+                    if(
+                        location === Constants.LOCATION_RIGHT_POPUP_CONTENT 
+                        || location === Constants.LOCATION_LEFT_POPUP_CONTENT
+                    ) {
+                        return (
+                            <Popup 
+                                key={index}
                                 item={item}
                             />
-                         </div>
-                    )
+                        )
+                    } else {
+                        return (
+                            <div key={index}  className={classes.wrapper}>
+                                <Gallery
+                                    item={item}
+                                />
+                            </div>
+                        )
+                    }
                 }
+                
+                return null
             }) 
         }
 

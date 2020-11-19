@@ -1,5 +1,5 @@
-import {useMemo, useEffect} from 'react'
-import {useQuery, useLazyQuery} from '@apollo/client'
+import {useMemo} from 'react'
+import {useQuery} from '@apollo/client'
 import * as Constants from '../../constants'
 import GET_MP_ARP_PRODUCT_PAGE from '../../queries/getMpARPProductPage.graphql'
 import GET_MP_ARP_CART_PAGE from '../../queries/getMpARPShoppingCartPage.graphql'

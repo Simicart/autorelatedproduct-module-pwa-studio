@@ -22,7 +22,7 @@ const Item = props => {
         handleAddToCart,
         handleClickItem,
         isAddSimpleLoading,
-        errorAddingSimpleProduct,
+        // errorAddingSimpleProduct,
     } = talonProps
 
     const productLink = resourceUrl(`/${url_key}${url_suffix}`);
@@ -45,7 +45,7 @@ const Item = props => {
                 <div className={classes.title}>
                     <span>{blockName}</span>
                 </div>
-                <Link to={productLink} className={classes.name}>
+                <Link onClick={handleClickItem} to={productLink} className={classes.name}>
                     <span>{name}</span>
                 </Link>
                 <div className={classes.price}>

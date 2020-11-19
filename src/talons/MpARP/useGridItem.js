@@ -15,8 +15,6 @@ export const useGridItem = props => {
 
     const {product, ruleId} = props;
 
-    console.log(ruleId)
-
     const productType = product.__typename;
 
     const [{ cartId }] = useCartContext();
@@ -28,7 +26,7 @@ export const useGridItem = props => {
 
     const [
         updateTotal,
-    ] = useLazyQuery(MP_ARP_UPDATE_TOTAL, {fetchPolicy: "no-cache"})
+    ] = useMutation(MP_ARP_UPDATE_TOTAL, {ignoreResults: true})
 
     const quantity = 1;
 

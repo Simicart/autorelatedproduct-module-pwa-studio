@@ -11,6 +11,7 @@ query mpARPCheckoutPage {
             limit_number
             display_out_of_stock
             display_additional
+            is_active
             match_products {
                 __typename
                 id
