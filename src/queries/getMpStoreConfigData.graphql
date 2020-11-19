@@ -1,0 +1,5 @@
+query mpStoreConfigData {
+    storeConfig {
+        mp_arp_is_enable
+    }
+}

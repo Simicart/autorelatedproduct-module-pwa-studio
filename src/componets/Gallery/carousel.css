@@ -1,0 +1,44 @@
+.root {
+    padding: 0 2rem;
+}
+
+.blockName {
+    margin-bottom: 1.25rem;
+    margin-top: 1.5625rem;
+    line-height: 1.1;
+    font-size: 1.625rem;
+}
+
+.action {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.nextAction {
+    left: -2rem;
+}
+
+.prevAction {
+    right: -2rem;
+}
+
+.disable {
+    display: none;
+}
+
+.gridItem {
+    padding: 0 1rem;
+}
+
+@media (max-width: 767px) {
+    .root {
+        padding: 0 1rem;
+    }
+
+    .gridItem {
+        padding: 0 0.5rem;
+    }
+}

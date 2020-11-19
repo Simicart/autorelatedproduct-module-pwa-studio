@@ -1,0 +1,45 @@
+.root {
+    
+}
+
+.name {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    line-height: 1.2;
+}
+
+.actionBlock {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    text-align: center;
+    margin: 1rem;
+}
+
+.addToCartButton {
+
+}
+
+.cartActions {
+
+}
+
+@media(max-width: 767px) {
+    .cartActions button {
+        font-size: 10px;
+        min-width: 6rem;
+    }
+}
+
+@media(max-width: 639px) {
+    .cartActions button {
+        font-size: 10px;
+        min-width: 6.5rem;
+        padding: 8px;
+    }
+}
