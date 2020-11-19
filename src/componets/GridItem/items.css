@@ -21,6 +21,14 @@
     margin: 1rem;
 }
 
+.imageContainer {
+
+}
+
+.image {
+    max-height: 100%;
+}
+
 .addToCartButton {
 
 }

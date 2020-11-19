@@ -97,7 +97,7 @@ const Item = props => {
                     }}
                     src={small_image.url}
                     width={'100%'}
-                    height={'100%'}
+                    height={'auto'}
                 />
             </Link>
             <Link onClick={handleClickItem} to={productLink} className={classes.name}>
