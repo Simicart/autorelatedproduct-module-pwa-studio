@@ -1,13 +1,13 @@
-# Reward Point module for Magento PWA Studio
+# Auto Related Rroducts  module for Magento PWA Studio
 
-This module acts as an add-on for [Mageplaza's Reward Point extension](https://www.mageplaza.com/magento-2-reward-points-extension/) to make it work with Magento PWA Studio.
+This module acts as an add-on for [Mageplaza's Auto Related Rroducts extension](https://www.mageplaza.com/magento-2-automatic-related-products/) to make it work with Magento PWA Studio.
 
-End result: https://rewardpoint.pwa-commerce.com/
+End result: https://automatic-related-products.pwa-commerce.com/
 
 ## Requirements
 
 - Magento version 2.4.* or >= 2.3.5
-- Got [Mageplaza Reward Point extension](https://www.mageplaza.com/magento-2-automatic-related-products/) and [Reward Point GraphQL](https://github.com/mageplaza/magento-2-auto-related-products-graphql) installed
+- Got [Mageplaza Auto Related Rroducts extension](https://www.mageplaza.com/magento-2-automatic-related-products/) and [Auto Related Rroducts GraphQL](https://github.com/mageplaza/magento-2-auto-related-products-graphql) installed
 
 ## Installation
 
@@ -40,7 +40,7 @@ Modify the dependencies of your project to add Shop By Brand extension.
 ```
   "dependencies": {
     "@magento/pwa-buildpack": "~7.0.0",
-    "@simicart/rewardpoints-module-pwa-studio": "link:./@simicart/autorelatedproduct-module-pwa-studio"
+    "@simicart/autorelatedproduct-module-pwa-studio": "link:./@simicart/autorelatedproduct-module-pwa-studio"
   },
 ```
 
