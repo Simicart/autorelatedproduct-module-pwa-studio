@@ -21,9 +21,10 @@ module.exports = targets => {
         flags[targets.name] = {esModules: true, cssModules: true};
     });
 
-    console.log("OK")
 
     targets.of('@magento/pwa-buildpack').webpackCompiler.tap(compiler => {
         new moduleOverrideWebpackPlugin(componentOverrideMapping).apply(compiler)
     })
+
+    console.log("Plugin Related Product is now running... ")
 };

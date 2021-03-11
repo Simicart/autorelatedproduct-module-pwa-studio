@@ -1,3 +1,0 @@
-mutation mpARPUpdateTotal($ruleId: Int) {
-    mpARPUpdateTotal(ruleId: $ruleId)
-}
