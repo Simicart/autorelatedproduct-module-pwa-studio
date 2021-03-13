@@ -7,7 +7,7 @@
 
 This module acts as an add-on for [Mageplaza's Auto Related Products extension](https://www.mageplaza.com/magento-2-automatic-related-products/) to make it work with Magento PWA Studio.
 
-End result: https://autorelated.pwa-commerce.com
+End result: https://autorelated.pwa-commerce.com/shop-the-look.html?page=1
 
 ## Requirements
 
@@ -18,7 +18,7 @@ End result: https://autorelated.pwa-commerce.com
 
 ### 1. Init project
 ```
-git clone https://github.com/Simicart/simi-studio --branch release/2.0.0
+git clone https://github.com/Simicart/simi-studio --branch release/3.0.0
 cd simi-studio
 ```
 
