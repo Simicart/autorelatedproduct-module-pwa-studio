@@ -1,4 +1,4 @@
-# Related Product module for Magento PWA Studio
+# Auto Related Products module for Magento PWA Studio
 
 
 ## What is this?
@@ -7,7 +7,7 @@
 
 This module acts as an add-on for [Mageplaza's Auto Related Products extension](https://www.mageplaza.com/magento-2-automatic-related-products/) to make it work with Magento PWA Studio.
 
-End result: https://autorelated.pwa-commerce.com/shop-the-look.html?page=1
+End result: https://autorelated.pwa-commerce.com/felicia-maxi-dress.html
 
 ## Requirements
 
